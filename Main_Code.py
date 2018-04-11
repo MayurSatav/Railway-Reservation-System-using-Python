@@ -95,7 +95,7 @@ class Train_Ticket():
             pickle_in = open("admindict.pickle","rb")
             admin = pickle.load(pickle_in)
             login_username=raw_input('Enter Username       : ')
-            login_password=raw_input('Enter Username       : ')
+            login_password=raw_input('Enter Password       : ')
             if admin.has_key(login_username):
                 if admin[login_username]==login_password:
                     while True:
